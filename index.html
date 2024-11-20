@@ -16,7 +16,14 @@
         <div id="menu">
                 <nav>
                     <a href=""><h4>CATÁLOGO DE LIVROS</h4></a>
-                    <input type="search" id="search" placeholder="BUSCAR">
+                    <div id="input-lupa">
+                        <input type="search" id="search" placeholder="BUSCAR">
+                        <div id="divLupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </div>
+                    </div>
                     <a href=""><h4>LIVROS DISPONÍVEIS PARA ALUGUEL</h4></a>
                     <a id="criar-conta">CRIAR CONTA</a>
                 </nav>
@@ -26,6 +33,32 @@
     <main>
         <div id="div-banner">
             <img src="assets/images/banner.png" alt="">
+        </div>
+
+        <div id="fade" class="hide">
+
+        </div>
+
+        <div id="modal" class="hide">
+            <div id="modal-header">
+                <h2>Cadastro</h2>
+            </div>
+            <div id="modal-body">
+                <div id="formularios">
+                    <label for="">Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Digite seu email">
+                    <label for="">Senha</label>
+                    <input type="text" placeholder="Digite uma senha">
+                    <label for="">Confirmar senha</label>
+                    <input type="text" placeholder="Confirme sua senha">
+                </div>
+                
+                <div id="botaoCadastro">
+                    <button>Cadastrar</button>
+                </div>
+            </div>
         </div>
 
         <div id="catalogo">
